@@ -11,6 +11,7 @@ const Navbar = () => {
             setShowLinks(true)
         } else {
             setShowLinks(false)
+            document.querySelector(".testimonial-articles").style.transform = "translateX(0)"
         }
     }
 

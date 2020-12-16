@@ -19,11 +19,13 @@ code {
   --text-size: 20px;
   --heading-color: #0b132a;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   width: 80%;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 section {
@@ -288,14 +290,16 @@ nav {
 }
 
 .testimonial-card {
-  width: 400px;
-  height: 230px;
+  width: 450px;
+  height: auto;
+  min-height: 230px;
   border: 2px solid #dddddd;
   margin-right: 50px;
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: start;
   padding: 20px;
 }
 
@@ -518,6 +522,7 @@ footer {
   .testimonial-articles {
     display: inline;
     width: 100vw;
+    transform: translateX(0);
   }
   .testimonial-card {
     width: 350px;

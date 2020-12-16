@@ -17,9 +17,6 @@ const Testimonials = () => {
         if (index > lastIndex) {
             setIndex(0)
         }
-
-        console.log(index);
-
     }, [index])
 
     return <section id="testimonials-section">
@@ -29,7 +26,7 @@ const Testimonials = () => {
         </div>
         <div className="testimonials-container">
             <div className="testimonial-articles" 
-                style={{transform: `translateX(${-index * 420}px)`
+                style={{transform: `translateX(${-index * 500}px)`
             }}>
                 {
                     testimonialsData.map((data) =>{
